@@ -5,11 +5,452 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Home</title>
 
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+        />
         <link rel="stylesheet" href="Style/Scss/style.css" />
     </head>
-    <body>
-        <header></header>
-        <main></main>
-        <footer></footer>
+    <body class="">
+        <header>
+            <nav class="navbar navbar-expand-lg shadow-sm px-3">
+                <a href="" class="px-2 navbar-brand text-warning">
+                    <i class="fa-solid fa-dove"></i>
+                </a>
+
+                <button
+                    class="navbar-toggler"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#dropdown1"
+                >
+                    <span class="btn navbar-toggler-icon border-0"></span>
+                </button>
+
+                <div id="dropdown1" class="collapse navbar-collapse">
+                    <ul class="navbar-nav list-unstyled">
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="index.html"> Home </a>
+                        </li>
+
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="gallery.html"> Gallery </a>
+                        </li>
+
+                        <li class="nav-item dropdown px-2">
+                            <button
+                                class="btn dropdown-toggle border-0 nav-link"
+                                data-bs-toggle="dropdown"
+                            >
+                                Products
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu p-3">
+                                <li>
+                                    <a href="" class="nav-link dropdown-item p-1"> Softener </a>
+                                </li>
+                                <li>
+                                    <a href="" class="nav-link dropdown-item p-1"> Soap </a>
+                                </li>
+                                <li>
+                                    <a href="" class="nav-link dropdown-item p-1">
+                                        Skin cleanser
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="customers.html"> Customers </a>
+                        </li>
+                    </ul>
+                    <form action="" class="d-flex justify-content-center ms-auto ps-5 mx-5">
+                        <input type="text" class="form-control well" placeholder="Search" />
+
+                        <span class="px-2">
+                            <button class="btn btn-warning p-2 px-3 border-0" type="button">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </span>
+                    </form>
+                </div>
+            </nav>
+
+            <section class="sidebar container-fluid">
+                <div class="row bg-warning p-3">
+                    <div class="col-md-6 col-lg-8 text-center">
+                        <h1 class="display-3 text-white">
+                            <span class="display-2">Dove</span> Love your skin
+                        </h1>
+                        <h2 class="display-4 my-5">Dove is different</h2>
+                        <a class="btn btn-light btn-lg p-2" href="">Customers club</a>
+                        <a class="btn btn-outline-light btn-lg p-2" href="">Weblog</a>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <img
+                            class="d-none d-md-block"
+                            src="./Source/Home/Image/products.png"
+                            alt="products"
+                            style="width: 100%"
+                        />
+                    </div>
+                </div>
+            </section>
+        </header>
+        <main>
+            <section class="features bg-light p-4">
+                <div class="text-center">
+                    <div class="m-5">
+                        <h1 class="text-warning">We owe you your trust</h1>
+                        <p class="tex-muted my-5">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam
+                            asperiores natus modi exercitationem.
+                        </p>
+                    </div>
+
+                    <div class="feat-lg">
+                        <div class="feat text-center">
+                            <div class="hover-1 m-5">
+                                <i
+                                    class="fa-solid fa-award text-warning"
+                                    style="font-size: 7rem"
+                                ></i>
+                                <div>
+                                    <h3 class="text-secondary">Top badge</h3>
+                                </div>
+                                <p class="text-muted mt-2">
+                                    Lorem ipsum dolor, sit amet adipisicing elit. Id ipsum in totam
+                                    sit excepturi natus fuga.
+                                </p>
+                            </div>
+                            <div class="hover-1 m-5">
+                                <i
+                                    class="fa-solid fa-leaf text-success"
+                                    style="font-size: 7rem"
+                                ></i>
+                                <div>
+                                    <h3 class="text-secondary">Completely natural</h3>
+                                </div>
+                                <p class="text-muted mt-2">
+                                    Lorem ipsum dolor, sit amet adipisicing elit. Id ipsum in totam
+                                    sit excepturi natus fuga.
+                                </p>
+                            </div>
+                            <div class="hover-1 m-5 d-none d-lg-block">
+                                <i
+                                    class="fa-solid fa-heart-pulse text-danger"
+                                    style="font-size: 7rem"
+                                ></i>
+                                <div>
+                                    <h3 class="text-secondary">health lover</h3>
+                                </div>
+                                <p class="text-muted mt-2">
+                                    Lorem ipsum dolor, sit amet consectetur sdpp adipisicing elit.
+                                    Idl in totam sit excepturi natus fuga.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="hover-1 m-5 d-lg-none">
+                            <i
+                                class="fa-solid fa-heart-pulse text-danger"
+                                style="font-size: 7rem"
+                            ></i>
+                            <div>
+                                <h3 class="text-secondary">health lover</h3>
+                            </div>
+                            <p class="text-muted mt-2">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id ipsum
+                                in totam sit excepturi natus fuga.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="products text-center p-5">
+                <div class="p-5">
+                    <h2 class="text-warning">The quality of our products speaks for itself</h2>
+                    <p class="p-3 text-muted">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cupiditate hic
+                        doloribus maxime sint harum expedita!
+                    </p>
+                </div>
+                <div class="feat">
+                    <div class="p-5 pt-5 hover-2">
+                        <a href="">
+                            <img class="img-thumbnail" src="./Source/Home/Image/p3.jpg" alt="" />
+                            <h3 class="pt-3">Soaps</h3>
+                            <p class="text-muted">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="p-5 pt-5 pt-lg-1 hover-2">
+                        <a href="">
+                            <img class="img-thumbnail" src="./Source/Home/Image/p2.jpg" alt="" />
+                            <h3 class="pt-3">Dove package</h3>
+                            <p class="text-muted">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="p-5 pt-5 hover-2">
+                        <a href="">
+                            <img class="img-thumbnail" src="./Source/Home/Image/p1.jpg" alt="" />
+                            <h3 class="pt-3">Softener</h3>
+                            <p class="text-muted">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="blog bg-light p-5">
+                <div class="">
+                    <h2 class="text-warning text-center mb-5">Blog updates</h2>
+                </div>
+                <div class="cards">
+                    <div class="card m-4">
+                        <div class="card-img-top">
+                            <a href="">
+                                <img class="rounded-top-2" src="./Source/Home/Image/b1.jpg" alt="" />
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <a href="">
+                                <h3 class="">Lorem, ipsum.</h3>
+                            </a>
+                            <p class="text-muted">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            </p>
+                            <div
+                                class="text-center justify-content-around d-flex align-items-center"
+                                style="font-size: 1.5rem"
+                            >
+                                <span>
+                                    <a href="">
+                                        <i class="bi bi-youtube text-danger"></i>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="">
+                                        <i class="bi bi-facebook text-primary"></i>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="">
+                                        <i class="bi bi-twitter-x text-black"></i>
+                                    </a>
+                                </span>
+                                <span class="">
+                                    <a href="" class="instagram">
+                                        <i class="bi bi-instagram text-white"></i>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card m-4">
+                        <div class="card-img-top">
+                            <a href="">
+                                <img class="rounded-top-2" src="./Source/Home/Image/b2.jpg" alt="" />
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <a href="">
+                                <h3 class="">Lorem, ipsum.</h3>
+                            </a>
+                            <p class="text-muted">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            </p>
+                            <div
+                                class="text-center justify-content-around d-flex align-items-center"
+                                style="font-size: 1.5rem"
+                            >
+                                <span>
+                                    <a href="">
+                                        <i class="bi bi-youtube text-danger"></i>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="">
+                                        <i class="bi bi-facebook text-primary"></i>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="">
+                                        <i class="bi bi-twitter-x text-black"></i>
+                                    </a>
+                                </span>
+                                <span class="">
+                                    <a href="" class="instagram">
+                                        <i class="bi bi-instagram text-white"></i>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card m-4">
+                        <div class="card-img-top">
+                            <a href="">
+                                <img class="rounded-top-2" src="./Source/Home/Image/b3.jpg" alt="" />
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <a href="">
+                                <h3 class="">Lorem, ipsum.</h3>
+                            </a>
+                            <p class="text-muted">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            </p>
+                            <div
+                                class="text-center justify-content-around d-flex align-items-center"
+                                style="font-size: 1.5rem"
+                            >
+                                <span>
+                                    <a href="">
+                                        <i class="bi bi-youtube text-danger"></i>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="">
+                                        <i class="bi bi-facebook text-primary"></i>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="">
+                                        <i class="bi bi-twitter-x text-black"></i>
+                                    </a>
+                                </span>
+                                <span class="">
+                                    <a href="" class="instagram">
+                                        <i class="bi bi-instagram text-white"></i>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card m-4">
+                        <div class="card-img-top">
+                            <a href="">
+                                <img class="rounded-top-2" src="./Source/Home/Image/b4.jpg" alt="" />
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <a href="">
+                                <h3 class="">Lorem, ipsum.</h3>
+                            </a>
+                            <p class="text-muted">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            </p>
+                            <div
+                                class="text-center justify-content-around d-flex align-items-center"
+                                style="font-size: 1.5rem"
+                            >
+                                <span>
+                                    <a href="">
+                                        <i class="bi bi-youtube text-danger"></i>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="">
+                                        <i class="bi bi-facebook text-primary"></i>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="">
+                                        <i class="bi bi-twitter-x text-black"></i>
+                                    </a>
+                                </span>
+                                <span class="">
+                                    <a href="" class="instagram">
+                                        <i class="bi bi-instagram text-white"></i>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact p-5">
+                <div class="m-auto" style="max-width: 768px">
+                    <div class="text-center mb-5" style="max-width: 768px">
+                        <h2 class="text-warning">Contact whith us</h2>
+                        <p class="text-muted">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="m-3 text-secondary">Do you have a qustion?</h4>
+                        <form class="" action="">
+                            <label class="text-secondary m-1" for="name">Name</label>
+                            <input id="name" class="form-control mb-3" type="text" />
+                            <label class="text-secondary m-1" for="email">Email</label>
+                            <input id="email" class="form-control mb-3" type="email" />
+                            <label class="text-secondary m-1" for="masseage">Masseage</label>
+                            <textarea
+                                class="form-control mb-3"
+                                name="qustion"
+                                id="masseage"
+                                cols="30"
+                                rows="10"
+                                style="resize: none"
+                            ></textarea>
+                            <input type="submit" class="form-control btn btn-outline-warning" />
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section class="bg-light p-5 pt-4 pb-2">
+                <div class="text-center py-2">
+                    <img class="" src="./Source/Home/Image/logo.png" alt="" style="width: 10rem" />
+                    <h4 class="pt-3 text-warning">Dove is different</h4>
+                </div>
+                <div
+                    class="text-center justify-content-center d-flex align-items-center py-3"
+                    style="font-size: 1.5rem"
+                >
+                    <span class="px-3">
+                        <a href="">
+                            <i class="bi bi-youtube text-danger"></i>
+                        </a>
+                    </span>
+                    <span class="px-3">
+                        <a href="">
+                            <i class="bi bi-facebook text-primary"></i>
+                        </a>
+                    </span>
+                    <span class="px-3">
+                        <a href="">
+                            <i class="bi bi-twitter-x text-black"></i>
+                        </a>
+                    </span>
+                    <span class="px-3">
+                        <a href="" class="instagram">
+                            <i class="bi bi-instagram text-white"></i>
+                        </a>
+                    </span>
+                </div>
+                <div class="text-center">
+                    <p>Copyright ©2024 All Rights Reserved.</p>
+                </div>
+            </section>
+        </footer>
+        <script src="https://kit.fontawesome.com/d99f683258.js" crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"
+        ></script>
     </body>
 </html>

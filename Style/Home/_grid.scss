@@ -14,5 +14,51 @@
 
 /* === end of footer  === */
 /* === start of function === */
+@media screen and (min-width: 768px) {
+    main .features {
+        .feat {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
 
+@media screen and (min-width: 1024px) {
+    main .features {
+        .feat {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main .products {
+        .feat {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    main .blog {
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            max-width: 1000px;
+            margin: auto;
+        }
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    main .blog {
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            max-width: 1800px;
+        }
+    }
+}
 /* === end of function === */ 

@@ -3,10 +3,11 @@
 /* === end of variable === */
 /* === start of general === */
 @font-face {
-    font-family: name;
-    src: url(../Font/name.ttf) format(ttf);
-    src: url(../Font/name.eot) format(eot), url(../Font/name.woff) format(woff),
-        url(../Font/name.woff2) format(woff2);
+    font-family: vazir;
+    src: url(../Font/vazir-font-v16.1.0/Vazir.ttf) format(ttf);
+    src: url(../Font/vazir-font-v16.1.0/Vazir.eot) format(eot),
+        url(../Font/vazir-font-v16.1.0/Vazir.woff) format(woff),
+        url(../Font/vazir-font-v16.1.0/Vazir.woff2) format(woff2);
 }
 
 @media screen and (min-width: 2000px) {
@@ -27,8 +28,12 @@ body {
 
 :root {
     direction: ltr;
-    font-family: name;
+    font-family: vazir;
     font-size: 16px;
+}
+
+img {
+    width: 100%;
 }
 /* === end of general === */
 /* === start of header === */

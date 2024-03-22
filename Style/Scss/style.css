@@ -2,9 +2,9 @@
 /* === end of variable === */
 /* === start of general === */
 @font-face {
-  font-family: name;
-  src: url(../Font/name.ttf) format(ttf);
-  src: url(../Font/name.eot) format(eot), url(../Font/name.woff) format(woff), url(../Font/name.woff2) format(woff2);
+  font-family: vazir;
+  src: url(../Font/vazir-font-v16.1.0/Vazir.ttf) format(ttf);
+  src: url(../Font/vazir-font-v16.1.0/Vazir.eot) format(eot), url(../Font/vazir-font-v16.1.0/Vazir.woff) format(woff), url(../Font/vazir-font-v16.1.0/Vazir.woff2) format(woff2);
 }
 @media screen and (min-width: 2000px) {
   html {
@@ -21,8 +21,12 @@ body {
 
 :root {
   direction: ltr;
-  font-family: name;
+  font-family: vazir;
   font-size: 16px;
+}
+
+img {
+  width: 100%;
 }
 
 /* === end of general === */
@@ -35,6 +39,12 @@ body {
 /* === start of function === */
 /* === end of function === */
 /* === start of variable === */
+.instagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* === end of variable === */
 /* === start of general === */
 /* === end of general === */
@@ -57,12 +67,122 @@ body {
 /* === start of footer === */
 /* === end of footer  === */
 /* === start of function === */
+@media screen and (min-width: 768px) {
+  main .features .feat {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .features .feat {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .products .feat {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 768px) {
+  main .blog .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1000px;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1300px) {
+  main .blog .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1800px;
+  }
+}
 /* === end of function === */
 /* === start of variable === */
 /* === end of variable === */
 /* === start of general === */
 /* === end of general === */
 /* === start of header === */
+header .navbar .nav-link:hover {
+  color: black;
+}
+
+header .slider {
+  height: 95vh;
+}
+
+.instagram {
+  height: 30px;
+  width: 30px;
+  border-radius: 0.5rem;
+  background: #833ab4;
+  background: linear-gradient(to bottom left, #833ab4, #fd1d1d, #fcb045);
+  margin: 0rem;
+  padding: 3px;
+  padding-bottom: 4.5px;
+}
+
+.hover-1 i {
+  margin-bottom: 2rem;
+  transition: 0.5s;
+}
+
+.hover-1:hover i {
+  transition: 0.5s;
+  transform: translate(0, -15px);
+}
+
+.hover-1 {
+  margin-bottom: 2rem;
+  transition: 0.5s;
+}
+
+.hover-1:hover {
+  transition: 0.5s;
+  transform: translate(0, -15px);
+}
+
+.hover-2 img {
+  margin-bottom: 2rem;
+  transition: 0.5s;
+}
+
+.hover-2:hover img {
+  transition: 0.5s;
+  transform: translate(0, -15px);
+}
+
+h3 {
+  transition: 0.5s;
+  color: rgb(108, 117, 125);
+  display: inline;
+}
+
+p {
+  padding-top: 1rem;
+}
+
+h3:hover {
+  transition: 0.5s;
+  color: rgb(75, 86, 96);
+}
+
+.hover-2 a, .card a {
+  text-decoration: none;
+}
+
+.card {
+  transition: 0.5s;
+}
+
+.card:hover {
+  transform: scale(105%);
+  transition: 0.5s;
+}
+
 /* === end of header === */
 /* === start of main === */
 /* === end of main === */
