@@ -17,6 +17,23 @@ header .slider {
     }
 }
 
+@keyframes img {
+    0% {
+        transform: translate(5rem, 0rem);
+        opacity: 0; 
+    }
+
+    100% {
+        transform: translate(-3rem, 0rem);
+        opacity: 1;
+    }
+}
+
+header img {
+    animation: img 2s ease alternate;
+    transform: translate(-3rem, 0rem);
+}
+
 .instagram {
     height: 30px;
     width: 30px;
